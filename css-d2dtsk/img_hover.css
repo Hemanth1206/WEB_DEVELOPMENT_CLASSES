@@ -1,0 +1,7 @@
+/* to slightly enlarge the image on hover */
+
+img{
+    transform: scale(1.1); /* slightly enlarge the image on hover */
+   
+    cursor: pointer;
+}

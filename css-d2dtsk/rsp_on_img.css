@@ -1,0 +1,8 @@
+/* this code snippet describes the image tag wrapped around with anchor tag the link should response only on image */
+a{
+    pointer-events: none; /* this makes the rest of the space to not response */
+
+}
+img{
+    pointer-events: auto; /* response on the image */
+}

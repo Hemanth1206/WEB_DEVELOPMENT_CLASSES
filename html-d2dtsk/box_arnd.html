@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Inside a Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center;    /* Center vertically */
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    .main {
+      width: auto; /* Box width */
+      height: auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 2px solid #ddd;
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      text-align: center; /* Center content */
+    }
+
+    h1 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .link {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .img {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .img:hover {
+      transform: scale(1.1); /* Slightly enlarge on hover */
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="main" id="main">
+    <h1>Click on an image to view content</h1>
+    <a href="html-d2dtsk/" class="link">
+      <img src="logos_pics/html-5.png" alt="HTML" class="img">
+    </a>
+    <a href="css-d2dtsk" class="link">
+      <img src="logos_pics/css-3.png" alt="CSS" class="img">
+    </a>
+    <a href="js-d2dtsk" class="link">
+      <img src="logos_pics/js.png" alt="JAVASCRIPT" class="img">
+    </a>
+  </div>
+</body>
+</html>
