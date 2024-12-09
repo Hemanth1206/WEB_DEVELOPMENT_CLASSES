@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subfolder Files</title>
+    <style>
+        /* Initial styles for the list */
+        #file-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #file-list li {
+            margin: 10px 0;
+        }
+
+        /* Default link style */
+        #file-list a {
+            text-decoration: none;
+            color: blue;
+            font-size: 16px;
+            transition: transform 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select a File</h1>
+    <ul id="file-list"></ul>
+
+    <script>
+        // List of files in the subfolder
+        const files = [
+            
+        ];
+
+        // Base path to the subfolder
+        const subfolderPath = "js-d2dtsk/";
+
+        // Get the file list container
+        const fileList = document.getElementById("file-list");
+
+        // Dynamically create links
+        files.forEach(file => {
+            const listItem = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = subfolderPath + file;
+            link.textContent = file;
+
+            // Add hover effects using JavaScript
+            link.addEventListener("mouseover", () => {
+                link.style.transform = "scale(1.1)"; // Scale effect
+                link.style.color = "darkblue"; // Change color
+                link.style.cursor = "pointer"; // Pointer cursor
+            });
+
+            link.addEventListener("mouseout", () => {
+                link.style.transform = "scale(1)"; // Reset scale
+                link.style.color = "blue"; // Reset color
+            });
+
+            listItem.appendChild(link);
+            fileList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
