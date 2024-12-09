@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subfolder Files</title>
+    
+</head>
+<body>
+    <h1>Select a File</h1>
+    <ul id="file-list"></ul>
+
+    <script>
+        // List of files in the subfolder
+        const files = [
+            "img_hover.css",
+            "rsp_on_img.css"
+            
+        ];
+
+        // Base path to the subfolder
+        const subfolderPath = "css-d2dtsk/";
+
+        // Get the file list container
+        const fileList = document.getElementById("file-list");
+
+        // Dynamically create links
+        files.forEach(file => {
+            const listItem = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = subfolderPath + file;
+            link.textContent = file;
+            listItem.appendChild(link);
+            fileList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
+
