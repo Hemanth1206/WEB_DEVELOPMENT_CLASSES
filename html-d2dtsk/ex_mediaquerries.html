@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        
+        @media  (min-width:492px) and (max-width:600px){
+            body{
+                background-color: yellow;
+            }
+            .container{
+                position: relative;
+                margin-top: 305px;
+                left: 225px;
+            }
+            #width{
+                position: absolute;
+                margin-top: 15px;
+                left: 235px;
+                
+                
+            }
+        }
+            @media  (min-width:600px) and (max-width: 1528px){
+                body{
+                    background-color: rgb(114, 94, 148);
+                    display: grid;
+                    grid-template-columns: repeat(0, 1fr);
+                    
+                    place-items: center;
+                    margin-top: 300px;
+                    
+                }
+                
+            }
+
+        
+    </style> 
+</head>
+<body>
+    <div class="container" id="container">hello</div>
+    <div id="width">width:</div>
+    <script>
+        window.addEventListener('resize', () => {
+            const width = window.innerWidth;
+            document.getElementById('width').innerHTML=width;
+        })
+    </script>
+    
+</body>
+</html>
